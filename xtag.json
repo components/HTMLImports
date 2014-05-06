@@ -1,0 +1,24 @@
+{
+  "name": "htmlimports",
+  "tagName": "h",
+  "version": "0.0.2",
+  "author": "Arron Schaar",
+  "description": "Makes Polymer/HTMLImports Bower friendly",
+  "demo": "demo/index.html",
+  "compatibility": {
+    "firefox": 5,
+    "chrome": 4,
+    "ie": 9,
+    "opera": 12,
+    "android": 2.1,
+    "ios": 4
+  },
+  "documentation": {
+    "description": "Makes Polymer/HTMLImports bower friendly",
+    "attributes": {},
+    "events": {},
+    "methods": {},
+    "getters": {},
+    "setters": {}
+  }
+}

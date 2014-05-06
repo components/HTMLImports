@@ -1,0 +1,18 @@
+{
+  "name": "HTML-Imports",
+  "description": "HTML Imports polyfill for Web Components.",
+  "version": "0.0.2",
+  "author": "Arron Schaar",
+  "keywords": [
+    "polyfill",
+    "web-components",
+    "x-tag"
+  ],
+  "main": [
+    "src/html-imports.js"
+  ],
+  "dependencies": {
+    "MutationObserver": "~0.2.0",
+    "WeakMap": "~0.2.1"
+  }
+}
