@@ -20,8 +20,8 @@ module.exports = function(grunt) {
     'smush-components': {
       options: {
         fileMap: {
-          js: 'demo/x-tag-components.js',
-          css: 'demo/x-tag-components.css'
+          js: 'demo/dependencies.js',
+          css: 'demo/dependencies.css'
         }
       }
     },
@@ -30,11 +30,6 @@ module.exports = function(grunt) {
       file: 'package.json',
       prefix: '',
       commit: true
-    },
-    exec: {
-      'update_master':{
-        cmd: 'git push origin master --tags'
-      }
     },
     concat:{
       dist: {
@@ -57,12 +52,7 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-smush-components');
   grunt.loadNpmTasks('grunt-tagrelease');
   grunt.loadNpmTasks('grunt-bumpup');
-  grunt.loadNpmTasks('grunt-exec');
 
   grunt.registerTask('build', ['smush-components','concat:dist']);
-  grunt.registerTask('bump:patch', ['bumpup:patch', 'tagrelease']);
-  grunt.registerTask('bump:push', ['bumpup:patch', 'tagrelease','push']);
-
-  grunt.registerTask('push', ['exec:update_master']);
 
 };
